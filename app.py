@@ -347,7 +347,7 @@ if prompt := st.chat_input("Digite sua mensagem..."):
     st.chat_message("user").write(prompt)
 
     response = client.messages.create(
-        model="claude-opus-4-20250514",
+        model="claude-sonnet-4-20250514",
         max_tokens=4096,
         system=SYSTEM_PROMPT,
         messages=st.session_state.messages
